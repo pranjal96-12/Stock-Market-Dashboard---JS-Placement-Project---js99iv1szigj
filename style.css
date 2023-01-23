@@ -1,0 +1,210 @@
+.container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    gap: 5px;
+  }
+  
+  .header{
+    background-color: gray;
+    padding: 1em;
+    font-size: 26px;
+    border-radius: 1em;
+    font-family: Bahnschrift SemiLight SemiConde;
+    font-weight: bold;
+    width: 500px;
+    text-align: center;
+  }
+
+  .header #up-header{
+    color: green;
+  }
+  .header #down-header{
+    color: red;
+  }
+ 
+  .searchBox{
+    background-color: silver;
+    padding: 1em;
+    font-size: larger;
+    border-radius: 1em;
+    font-family: Bahnschrift SemiLight SemiConde;
+    font-weight: bold;
+    width: 500px;
+    text-align: center;
+    
+  }
+  .searchBox ::placeholder{
+    color: black;
+  }
+ 
+  #inputSearchBox, #buttonSearchBox{
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 1em;
+    font-size: larger;
+    padding: 1rem;
+    font-family: Bahnschrift SemiLight SemiConde;
+    width: 77%;
+    outline: none;
+  }
+  #buttonSearchBox{
+    border-radius: 3em;
+    width: 15%;
+  }
+  #searchIcon{
+    color: silver;
+  }
+  .btn-time-slots{
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 1em;
+    font-size: larger;
+    padding: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    font-family: cursive;
+    width: 230px;
+    padding: 0px 1em ;
+  }
+
+  .watchListBox{
+    background-color: silver;
+    padding: 1em;
+    font-size: larger;
+    border-radius: 1em;
+    font-weight: bold;
+    width: 500px;
+    text-align: center;
+  }
+
+  .txtWatchList{
+    background-color:rgb(165, 159, 159);
+    border: 1px solid gray;
+    color: rgb(82, 80, 80);
+    border-radius: 1em;
+    font-size: larger;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+  }
+  .IdWatchListTxt{
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  .stockArea{
+    background-color: silver;
+    border-radius: 1em;
+    text-align: center;
+    margin-top: 2%;
+   
+    height: 290px;
+    overflow-y: auto;
+  }
+  /* .stockArea::-webkit-scrollbar {
+    display: none;
+} */
+
+  .BtnWatchList{
+    background-color:rgb(165, 159, 159);
+    border: 1px solid gray;
+    color: rgb(82, 80, 80);
+    border-radius: 1em;
+    font-size: larger;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 1em;
+  }
+
+  .stockBtnArea{
+    background-color: silver;
+    border: 1px solid gray;
+    color: black;
+    border-radius: 1em;
+    position: relative;
+    font-family: cursive;
+    width: 150px;
+    font-weight: bold;
+    padding: 0px 1em ;
+    font-size: large;
+  }
+
+  .closeIconeBtn{
+    padding: 0em;
+    border-radius: 3em;
+    background-color: red;
+    border-color: red;
+    height: 35px;
+    width: 35px;
+    margin-top: 2%;
+  }
+  .closeIconeBtn i{
+    font-size: 32px;
+    color: white;
+    
+  }
+
+
+  .rateWatchListBox{
+    background-color: limegreen;
+    width: 100px;
+    border-radius: 1em;
+    font-family: cursive;
+    padding: 2% 0px;
+   color: black;
+  }
+
+  .symbolTxt{
+    margin-top: 2%;
+    width: 5rem;
+    font-family: cursive;
+    color: black;
+  }
+
+  .tableStockArea{
+    background-color:rgb(165, 159, 159);
+    border: 1px solid gray;
+    color: rgb(82, 80, 80);
+    border-radius: 1em;
+    font-size: larger;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 1em;
+    display: none; 
+  }
+
+  th{
+    font-family: cursive;
+  }
+
+  #spanForSearchItmes{
+    display: block;  
+    position: absolute;  
+    background-color: white;  
+    min-width: 350px; 
+    margin-left: 2%;
+    z-index: 1;
+    opacity: 75%;
+  }
+  #spanForSearchItmes li {  
+    display: block;  
+    font-size: 18px;  
+    background-color: #ddd;  
+    color: black;  
+    text-decoration: none;  
+    padding: 10px;  
+    border: 1px solid white;
+    gap: 2px;
+
+}  
