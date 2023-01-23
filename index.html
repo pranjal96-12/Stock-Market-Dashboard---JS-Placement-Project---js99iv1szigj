@@ -1,1 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stock Market Dashboard</title> 
+        <link href="./style.css" rel="stylesheet">
+        <script src="./script.js"></script>
+        
+<script src="https://kit.fontawesome.com/d9b4c31318.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="loadFunc()">
+     <div class="container">
+       <div class="header"><i id="up-header" class='fas fa-arrow-up'></i> STOCK MARKET DASHBOARD <i id="down-header" class='fas fa-arrow-down'></i></div>
+       <div class="searchBox">
+          <input  id="inputSearchBox" type="text" placeholder="Search for Symbol ...." onkeyup="searchInput()"/> 
+          <button id="buttonSearchBox" type="submit" onclick="submitSearchFunc()"><i id="searchIcon" class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+          <span id="spanForSearchItmes"></span>
+          <button id="INTRADAY" class="btn-time-slots" onclick="ClickTimeSeries(event, 'INTRADAY')">INTRADAY</button>
+        <button id="DAILY" class="btn-time-slots" onclick="ClickTimeSeries(event, 'DAILY')">DAILY</button>
+        <button id="WEEKLY" class="btn-time-slots" onclick="ClickTimeSeries(event, 'WEEKLY')">WEEKLY</button>
+        <button id="MONTHLY" class="btn-time-slots" onclick="ClickTimeSeries(event, 'MONTHLY')">MONTHLY</button>
+        </div>
 
+        <div class="watchListBox"> 
+            <div class="IdWatchListTxt">
+                <input type="text" id="searchTxtStocks" class="txtWatchList" placeholder="YOUR WATCHLIST...." onkeyup="searchStocks()"></input>
+            </div>
+            <div class="stockArea">
+               
+            </div>
+
+        </div>
+     </div>
+
+
+    </body>
